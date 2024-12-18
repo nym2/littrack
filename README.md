@@ -34,6 +34,20 @@ LitTrack is a Python-based CLI application that helps users manage their persona
   python cli.py
  2. Follow the on-screen prompts to manage categories and books.
 
+# Commands Overview
+  ## Main Menu
+Manage Categories
+Manage Books
+Exit Application
+  ## Category Options
+Add a new category.
+View all categories.
+Delete a category.
+  ## Book Options
+Add a new book.
+View all books.
+View books by category.
+Delete a book.
 
  
  
