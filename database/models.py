@@ -1,14 +1,12 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship, declarative_base
-
-Base = declarative_base()
+from sqlalchemy.orm import relationship
+from database.db import Base
 
 class Category(Base):
     __tablename__ = "categories"
 
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False, unique=True)
-
     books = relationship("Book", back_populates="category", cascade="all, delete-orphan")
 
     def __repr__(self):
@@ -21,7 +19,6 @@ class Book(Base):
     title = Column(String, nullable=False)
     author = Column(String, nullable=False)
     category_id = Column(Integer, ForeignKey("categories.id"))
-
     category = relationship("Category", back_populates="books")
 
     def __repr__(self):
