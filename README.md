@@ -49,6 +49,20 @@ View all books.
 View books by category.
 Delete a book.
 
+# Project Structure
+
+littrack/
+├── alembic/           # Alembic migrations folder
+├── database/
+│   ├── __init__.py
+│   ├── db.py          # Database connection and session setup
+│   ├── models.py      # SQLAlchemy models
+├── cli.py             # Command Line Interface
+├── Pipfile            # Pipenv dependencies
+├── README.md          # Project description (this file)
+
+
+
  
  
  
