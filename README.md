@@ -61,7 +61,8 @@ littrack/
 ├── Pipfile            # Pipenv dependencies
 ├── README.md          # Project description (this file)
 
-
+# Contributing
+Contributions are welcome! Feel free to submit a pull request or raise an issue to suggest enhancements.
 
  
  
